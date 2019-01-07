@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="This is a website for Indian Student Association" />  <!-- defines a description of the webpage -->
+  <meta name = "author" content = "Kajal Shukla" />  <!-- defines the author of the page -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <title>UA Little Rock ISA</title>
+
+         <!-- Bootstrap CSS CDN -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <!-- Our Custom CSS -->
+        <link rel="stylesheet" href="style4.css">
+    </head>
+    <body>
+        <!--- MAIN --->
+        <!--<main itemscope itemtype="http://schema.org/Person" class="container">-->
+        <div class="wrapper">
+            <!-- Sidebar Holder -->
+            <nav id="sidebar">
+                <div class="sidebar-header">
+                    <h3>Indian Student Association</h3>
+                    <strong>ISA</strong>
+                </div>
+
+                <ul class="list-unstyled components">
+                    <li class="active">
+                        <a href="#home">
+                            <i class="glyphicon glyphicon-home"></i>
+                            Home
+                        </a>
+                       
+                    </li>
+                    <li>
+                        <a href="#gallery">
+                            <i class="glyphicon glyphicon-briefcase"></i>
+                            Gallery
+                        </a>
+                         
+                        <a href="#committee">
+                            <i class="glyphicon glyphicon-duplicate"></i>
+                            Committee
+                        </a>
+                       
+                    </li>
+                  
+                    <li>
+                        <a href="#contact">
+                            <i class="glyphicon glyphicon-send"></i>
+                            Contact
+                        </a>
+                    </li> 
+                </ul>
+
+                
+            </nav>
+
+            <!-- Page Content Holder -->
+            <div id="content">
+                <nav class="navbar navbar-default">
+                    <div class="container-fluid">
+
+                        <div class="navbar-header">
+                            <button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn">
+                                <i class="glyphicon glyphicon-align-left"></i>
+                            </button>
+                        </div>
+
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <div class="nav navbar-nav navbar-right">
+                                <img src="img/banner.jpeg" alt = "Banner" class = "banner">
+                            </div> 
+                        </div>
+                    </div>
+                </nav>
+                
+                <!------------------------- HOME ---------------------------->
+              <section id = "home">
+               <div class = "about"> <h2>About Us</h2> </div>
+                <p>Indian Student Association is a Indian club at UA Little Rock. It represents the many Indian Students in the UA Little Rock community. The purpose of ISA is to unite students and expand their knowledge about different Indian culture by making International students feel at home on US Soil. </p>
+                <p>The organization give students opportunity to merge into Indian culture and able to express their Indian heritage by paticipating in Indian festivals.</p>
+                <br>
+                <!-- <img src="img/1.jpeg" alt = "culture" class = "responsive"> -->
+                 
+                 
+                 <picture>
+                  <source media="(min-width: 1224px)" srcset="img/group.jpeg">
+                  <source media="(min-width: 768px)" srcset="img/4.jpeg">
+                  <source media="(min-width: 480px)" srcset="img/2.jpeg">
+                  <img src="img/2.jpeg" alt="Flowers" style="width:auto;" class = "responsive">
+                </picture>
+
+                 
+              </section>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+
+                
+
+                 <!-----------------------------GALLERY------------------------------->
+         <section id = "gallery">
+            <div class = "events">
+                <h2>Check out our Gallery</h2>
+            </div>
+            </section>
+             
+            <div class="slideshow-container">
+                
+                <div class="mySlides">
+                  <div class="numbertext">1 / 7</div>
+                  <img src="img/fest.jpeg" alt = "IndiaFest">
+                  <div class="text">India Fest</div>
+               </div>
+               
+               <div class="mySlides">
+                  <div class="numbertext">2 / 7</div>
+                  <img src="img/dance.jpeg" alt = "Colors">
+                  <div class="text">Colors of India</div>
+               </div>
+
+                <div class="mySlides">
+                  <div class="numbertext">3 / 7</div>
+                  <img src="img/holi.jpeg" alt = "Holi">
+                  <div class="text">Holi</div>
+               </div>
+               
+               <div class="mySlides">
+                   <div class="numbertext">4 / 7</div>
+                   <img src="img/4.jpeg" alt = "garba">
+                   <div class="text">Cultural Fashion Show - 2017</div>
+                 </div>
+                 
+               <div class="mySlides">
+                   <div class="numbertext">5 / 7</div>
+                   <img src="img/fashion.jpeg" alt = "fashion" class = "responsive">
+                   <div class="text">Cultural Fashion Show - 2017</div>
+                 </div>
+
+               <div class="mySlides">
+                 <div class="numbertext">6 / 7</div>
+                 <img src="img/show.jpeg" alt = "show">
+                 <div class="text">Cultural Fusion Fashion Show - 2018</div>
+               </div>
+               
+               <div class="mySlides">
+                 <div class="numbertext">7 / 7</div>
+                 <img src="img/5.jpeg" alt = "ethnic" >
+                 <div class="text">Cultural Fusion Fashion Show - 2018</div>
+               </div>
+
+               <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+               <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            </div>
+              <br>
+
+               <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span> 
+                <span class="dot" onclick="currentSlide(2)"></span> 
+                <span class="dot" onclick="currentSlide(3)"></span> 
+                <span class="dot" onclick="currentSlide(4)"></span> 
+                <span class="dot" onclick="currentSlide(5)"></span> 
+                 <span class="dot" onclick="currentSlide(6)"></span> 
+                 <span class="dot" onclick="currentSlide(7)"></span> 
+              </div>
+
+                <br>
+            <div class = "video">
+                <video poster='img/video.jpeg' width="400"  controls>
+                  <source width='400' height='240' src='video/dance.mp4' type="video/mp4" />
+                </video>
+            </div>
+               <div class = "events"> <p>To see more event pictures, please visit our Instagram page and Facebook page</p></div>
+                <br>
+                <br>
+                <br>
+                 <br>
+                <br>
+                <br>
+                <!-----------------------------COMMITTEE------------------------------>
+                <section id = "committee">
+            <div class = "teams">
+                <h2>Meet the Team</h2>
+                <div class="row">
+                      <div class="column">
+                        <img src="img/prez.jpeg" alt="president" class = "response"><h6>Kajal Shukla | President</h6>
+                      </div>
+                      <br>
+                      <div class="column">
+                        <img src="img/viceprez.jpeg" alt="vice president" class = "response"><h6>Aneri Desai | Vice President</h6>
+                      </div>
+                      <br>
+                      <div class="column">
+                        <img src="img/secretary.jpeg" alt="Secretary" class = "response"><h6>Bhavya Patel | Secretary</h6>
+                     </div>
+                     <br>
+                     <div class="column">
+                        <img src="img/treasurer.jpeg" alt="Treasurer" class = "response"><h6>Kajal Desai | Treasurer</h6>
+                     </div>
+                </div>
+              </div>
+              </section>
+              
+               <br>
+                <br>
+                <br>
+                 <br>
+                <br>
+                <br>
+                 <br>
+                <br>
+                <br>
+              
+                <!------------------------------CONTACT INFO------------------------------->
+                <section id = "contact">
+             <div class = "contact">
+                <h3>Contact Information</h3>
+                <p>Follow us on our Instagram page to support us and get more information on future events - isa_ualittlerock</p><a href = "https://www.instagram.com/isa_ualittlerock/"><img src = "img/Instagram.jpeg" alt="instagram image"></a>
+                <p>Like our Facebook page - Indian Student Association, UA Little Rock</p><a href="https://www.facebook.com/groups/ualrisa/"><img src = "img/facebook.jpeg" alt="facebook image"></a>
+            </div>
+            </section>
+        </div>
+        </div>
+        
+        <!--</main>-->
+        
+        <!--- FOOTER -->
+        <div class="footer">
+    <h6>&copy;2018 Indian Student Association <a href = "https://preview.c9users.io/kxshukla/mobile-web/FINAL%20ISA%20PROJ/index4.html">|| Back to Top ||</a></h6>
+  </div>
+
+
+
+
+
+
+
+
+
+<!------------ jQUERY ---------------------->
+        <!-- jQuery CDN -->
+         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+         <!-- Bootstrap Js CDN -->
+         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+         <script type="text/javascript">
+             $(document).ready(function () {
+                 $('#sidebarCollapse').on('click', function () {
+                     $('#sidebar').toggleClass('active');
+                 });
+             });
+         </script>
+         
+         <!---PICTURES SLIDESHOW--->
+         <script>
+             var slideIndex = 1;
+             showSlides(slideIndex);
+
+             function plusSlides(n) {
+             showSlides(slideIndex += n);
+             }
+
+             function currentSlide(n) {
+             showSlides(slideIndex = n);
+             }
+
+             function showSlides(n) {
+               var i;
+               var slides = document.getElementsByClassName("mySlides");
+               var dots = document.getElementsByClassName("dot");
+                if (n > slides.length) {slideIndex = 1}    
+                 if (n < 1) {slideIndex = slides.length}
+                for (i = 0; i < slides.length; i++) {
+                   slides[i].style.display = "none";  
+                 }
+                for (i = 0; i < dots.length; i++) {
+                  dots[i].className = dots[i].className.replace(" active", "");
+                }
+                 slides[slideIndex-1].style.display = "block";  
+                 dots[slideIndex-1].className += " active";
+             }
+         </script>
+    </body>
+</html>
